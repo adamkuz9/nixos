@@ -1,0 +1,22 @@
+{
+  pkgs,
+  config,
+  ...
+}: {
+  imports = [
+    ../../modules
+  ];
+  
+  config = {
+    environment.systemPackages = with pkgs; [
+      brightnessctl
+    ];
+    modules = {
+      gnome.enable = true;
+      git.enable = true;
+      vscode.enable = true;
+      flatpak.enable = false;
+      discord.enable = true;
+    };
+  };
+}
