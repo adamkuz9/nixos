@@ -6,6 +6,7 @@
 }:
 with lib; let
   cfg = config.modules.gnome;
+  gvariant = lib.hm.gvariant;
 in {
   options = {
     modules.gnome.enable = mkEnableOption "gnome";
@@ -64,6 +65,10 @@ in {
 
     home-manager.users.adam = {
       dconf.settings = {
+        "org/gnome/desktop/interface" = {
+          scaling-factor = gvariant.mkUint32 1;
+          text-scaling-factor = gvariant.mkDouble 1.25;
+        };
         "org/gnome/desktop/wm/keybindings" = {
           switch-to-workspace-1 = ["<Super>1"];
           switch-to-workspace-2 = ["<Super>2"];
