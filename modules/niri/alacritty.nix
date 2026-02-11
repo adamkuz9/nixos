@@ -12,7 +12,7 @@ in {
   };
 
   config = mkIf cfg.enable {
-    home-manager.users.toft = {
+    home-manager.users.adam = {
       programs.alacritty = {
         enable = true;
         settings = {
