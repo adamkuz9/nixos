@@ -16,8 +16,7 @@ in {
   };
 
   config = mkIf cfg.enable {
-    services = {
-    };
+    programs.niri.enable = true;
 
     home-manager.users.adam = {
     };
