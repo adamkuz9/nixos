@@ -73,6 +73,10 @@ in {
           switch-to-workspace-5 = ["<Super>5"];
           close = ["<Super>q"];
         };
+        "org/gnome/desktop/interface" = {
+          color-scheme = "prefer-dark";
+          gtk-theme = "Adwaita-dark";
+        };
       };
     };
   };
