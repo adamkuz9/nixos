@@ -17,6 +17,7 @@
       vscode.enable = true;
       flatpak.enable = true;
       discord.enable = true;
+      niri.enable = true;
     };
   };
 }

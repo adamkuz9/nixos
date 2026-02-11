@@ -3,6 +3,7 @@
     # ./system
     ./flatpak
     ./gnome
+    ./niri
     ./discord
     ./git
     ./vscode
