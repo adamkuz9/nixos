@@ -6,7 +6,7 @@
   imports = [
     ../../modules
   ];
-  
+
   config = {
     environment.systemPackages = with pkgs; [
       brightnessctl
@@ -15,7 +15,7 @@
       gnome.enable = true;
       git.enable = true;
       vscode.enable = true;
-      flatpak.enable = false;
+      flatpak.enable = true;
       discord.enable = true;
     };
   };
