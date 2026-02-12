@@ -50,6 +50,7 @@ in {
           include "misc.kdl"
           include "window-rules.kdl"
           include "binds.kdl"
+          include "outputs.kdl"
         '';
         "niri/input.kdl".text = builtins.readFile ./conf/input.kdl;
         "niri/layout.kdl".text = builtins.readFile ./conf/layout.kdl;
