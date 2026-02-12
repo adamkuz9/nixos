@@ -45,8 +45,8 @@ in {
             disable-click = true;
             format = "{icon}";
             format-icons = {
-              active = " ";
-              default = " ";
+              active = "󰮯 ";
+              default = "󰊠 ";
             };
           };
 
@@ -73,11 +73,11 @@ in {
             format = "{icon}";
             format-bluetooth = "{icon}";
             tooltip-format = "{desc} - {volume} %";
-            format-muted = " ";
+            format-muted = "󰝟 ";
             on-click = "pwvucontrol";
             format-icons = {
-              headphone = " ";
-              default = [" " " "];
+              headphone = "󰋋 ";
+              default = ["󰕿 " "󰖀 "];
             };
             reverse-scrolling = true;
           };
@@ -97,10 +97,10 @@ in {
 
           network = {
             format = "{ifname}";
-            format-wifi = "  {essid}";
+            format-wifi = "󰤨  {essid}";
             format-ethernet = "󰈀  {ifname}";
             format-disconnected = "Disconnected";
-            tooltip-format-wifi = "  {ifname} @ {essid}\nIP: {ipaddr}\nStrength: {signalStrength}%\nFreq: {frequency}MHz\nUp: {bandwidthUpBits} Down: {bandwidthDownBits}";
+            tooltip-format-wifi = "󰤨  {ifname} @ {essid}\nIP: {ipaddr}\nStrength: {signalStrength}%\nFreq: {frequency}MHz\nUp: {bandwidthUpBits} Down: {bandwidthDownBits}";
             tooltip-format-ethernet = "󰈀  {ifname}\nIP: {ipaddr}\n up: {bandwidthUpBits} down: {bandwidthDownBits}";
             tooltip-format-disconnected = "Disconnected";
             max-length = 50;
@@ -108,12 +108,12 @@ in {
           };
 
           cpu = {
-            format = "  {usage}%";
+            format = "󰻠  {usage}%";
             interval = 10;
           };
 
           memory = {
-            format = "  {}%";
+            format = "󰍛  {}%";
             interval = 10;
           };
 
