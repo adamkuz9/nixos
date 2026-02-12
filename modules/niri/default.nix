@@ -27,7 +27,7 @@ in {
     environment.systemPackages = with pkgs; [
       fuzzel # app launcher
       waybar # status bar
-      swaylock # screen locker
+      swaylock-effects # screen locker
       mako # notification daemon
       wl-clipboard # clipboard utils
       brightnessctl # brightness control
