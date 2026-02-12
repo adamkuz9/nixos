@@ -35,6 +35,7 @@ in {
       grim # screenshot
       slurp # region selection for screenshots
       xdg-desktop-portal-gnome # portal for screencasting etc
+      xwayland-satellite # X11 compatibility for Wayland
     ];
 
     environment.sessionVariables.NIXOS_OZONE_WL = "1";
