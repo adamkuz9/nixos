@@ -32,8 +32,6 @@ in {
             "niri/window"
           ];
           modules-right = [
-            "custom/updates"
-            "backlight"
             "pulseaudio"
             "battery"
             "network"
