@@ -19,7 +19,7 @@ in {
           font = {
             size = 16.0;
             normal = {
-              family = "Fira Nerd Code";
+              family = "JetBrainsMono Nerd Font";
               style = "Regular";
             };
           };
