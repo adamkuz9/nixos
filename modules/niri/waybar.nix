@@ -71,18 +71,6 @@ in {
             max-length = 70;
           };
 
-          "custom/updates" = {
-            format = "  {}";
-            escape = true;
-            return-type = "json";
-            restart-interval = 60;
-          };
-
-          backlight = {
-            device = "intel_backlight";
-            format = "󰃟  {percent}%";
-          };
-
           pulseaudio = {
             format = "{icon}";
             format-bluetooth = "{icon}";
