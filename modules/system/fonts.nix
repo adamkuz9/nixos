@@ -5,5 +5,6 @@
     nerd-fonts.symbols-only
     noto-fonts
     nerd-fonts.jetbrains-mono
+    nerd-fonts.ubuntu-mono
   ];
 }

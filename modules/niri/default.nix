@@ -9,6 +9,7 @@ with lib; let
 in {
   imports = [
     ./alacritty.nix
+    ./waybar.nix
   ];
 
   options = {
@@ -20,6 +21,7 @@ in {
 
     modules = {
       alacritty.enable = true;
+      waybar.enable = true;
     };
 
     environment.systemPackages = with pkgs; [
