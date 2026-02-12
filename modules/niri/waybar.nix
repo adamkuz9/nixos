@@ -70,8 +70,8 @@ in {
           };
 
           pulseaudio = {
-            format = "{icon}";
-            format-bluetooth = "{icon}";
+            format = "{icon} {volume}%";
+            format-bluetooth = "{icon} {volume}%";
             tooltip-format = "{desc} - {volume} %";
             format-muted = "󰝟 ";
             on-click = "pwvucontrol";
