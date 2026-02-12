@@ -58,6 +58,7 @@ in {
         "niri/misc.kdl".text = builtins.readFile ./conf/misc.kdl;
         "niri/window-rules.kdl".text = builtins.readFile ./conf/window-rules.kdl;
         "niri/binds.kdl".text = builtins.readFile ./conf/binds.kdl;
+        "niri/outputs.kdl".text = builtins.readFile ./conf/outputs.kdl;
       };
     };
   };
