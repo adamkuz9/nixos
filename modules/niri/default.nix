@@ -18,6 +18,10 @@ in {
   config = mkIf cfg.enable {
     programs.niri.enable = true;
 
+    modules = {
+      alacritty.enable = true;
+    };
+
     environment.systemPackages = with pkgs; [
       fuzzel # app launcher
       waybar # status bar

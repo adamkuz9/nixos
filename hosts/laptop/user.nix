@@ -18,6 +18,7 @@
       flatpak.enable = true;
       discord.enable = true;
       niri.enable = true;
+      gcc.enable = true;
     };
   };
 }
