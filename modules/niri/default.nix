@@ -37,6 +37,8 @@ in {
       xdg-desktop-portal-gnome # portal for screencasting etc
     ];
 
+    environment.sessionVariables.NIXOS_OZONE_WL = "1";
+
     security.pam.services.swaylock = {};
 
     home-manager.users.adam = {
