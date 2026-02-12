@@ -22,18 +22,6 @@ in {
               family = "Fira Nerd Code";
               style = "Regular";
             };
-            bold = {
-              family = "Fira Nerd Code";
-              style = "Bold";
-            };
-            italic = {
-              family = "Fira Nerd Code";
-              style = "Italic";
-            };
-            bold_italic = {
-              family = "Fira Nerd Code";
-              style = "Bold Italic";
-            };
           };
 
           window = {
