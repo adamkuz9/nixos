@@ -14,6 +14,7 @@ in {
   config = mkIf (gcc.enable) {
     environment.systemPackages = with pkgs; [
         gcc15
+        cmake
     ];
   };
 }
