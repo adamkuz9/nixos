@@ -15,6 +15,7 @@ in {
     environment.systemPackages = with pkgs; [
         gcc15
         cmake
+        ninja
     ];
   };
 }
