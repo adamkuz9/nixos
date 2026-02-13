@@ -16,6 +16,7 @@ in {
         gcc15
         cmake
         ninja
+        gdb
     ];
   };
 }
