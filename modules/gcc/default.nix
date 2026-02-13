@@ -17,6 +17,7 @@ in {
         cmake
         ninja
         gdb
+        pkgs.jetbrains.clion
     ];
   };
 }
