@@ -19,6 +19,7 @@
       discord.enable = true;
       niri.enable = true;
       gcc.enable = true;
+      cloudflared.enable = true;
     };
   };
 }
