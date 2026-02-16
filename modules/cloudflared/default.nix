@@ -14,6 +14,7 @@ in {
   config = mkIf cfg.enable {
     environment.systemPackages = [
       pkgs.cloudflared
+      pkgs.freerdp
     ];
   };
 }
