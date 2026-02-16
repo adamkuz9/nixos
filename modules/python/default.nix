@@ -15,5 +15,9 @@ in {
     environment.systemPackages = with pkgs; [
       python3
     ];
+
+    environment.sessionVariables = {
+      LD_LIBRARY_PATH = "${pkgs.stdenv.cc.cc.lib}/lib";
+    };
   };
 }
