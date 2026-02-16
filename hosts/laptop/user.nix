@@ -20,6 +20,7 @@
       niri.enable = true;
       gcc.enable = true;
       cloudflared.enable = true;
+      python.enable = true;
     };
   };
 }
