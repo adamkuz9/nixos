@@ -14,6 +14,7 @@ in {
   config = mkIf cfg.enable {
     environment.systemPackages = with pkgs; [
       diff-so-fancy
+      gh
     ];
     home-manager.users.adam = {
       programs.git = {
