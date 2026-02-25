@@ -26,19 +26,19 @@ in {
 
           modules-left = [
             "niri/workspaces"
-            "custom/media"
           ];
           modules-center = [
-            "niri/window"
+            # "niri/window"
+            "clock"
           ];
           modules-right = [
+            "backlight"
             "pulseaudio"
             "battery"
             "network"
             "cpu"
             "memory"
             "power-profiles-daemon"
-            "clock"
           ];
 
           "niri/workspaces" = {
@@ -50,23 +50,15 @@ in {
             };
           };
 
-          "custom/media" = {
-            format = "{}";
-            tooltip = true;
-            tooltip-format = "{}";
-            escape = true;
-            return-type = "json";
-            max-length = 50;
-            on-click = "playerctl play-pause";
-            on-click-right = "playerctl stop";
-            on-scroll-up = "playerctl previous";
-            on-scroll-down = "playerctl next";
-          };
-
           "niri/window" = {
             icon = true;
             icon-size = 18;
             max-length = 70;
+          };
+          
+          backlight = {
+            format = "{icon}";
+            format-icons = ["" "" "" "" "" "" "" "" ""];
           };
 
           pulseaudio = {
