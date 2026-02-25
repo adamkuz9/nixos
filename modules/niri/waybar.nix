@@ -62,7 +62,7 @@ in {
           };
 
           pulseaudio = {
-            format = "{icon} {volume}%";
+            format = "{icon}{volume}%";
             format-bluetooth = "{icon} {volume}%";
             tooltip-format = "{desc} - {volume} %";
             format-muted = "󰝟 ";

@@ -25,7 +25,7 @@ in {
     };
 
     environment.systemPackages = with pkgs; [
-      fuzzel # app launcher
+      walker # app launcher
       waybar # status bar
       swaylock-effects # screen locker
       mako # notification daemon
