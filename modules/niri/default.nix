@@ -44,6 +44,13 @@ in {
     security.pam.services.swaylock = {};
 
     home-manager.users.adam = {
+      home.pointerCursor = {
+        package = pkgs.adwaita-icon-theme;
+        name = "Adwaita";
+        size = 24;
+        gtk.enable = true;
+      };
+
       xdg.configFile = {
         "niri/config.kdl".text = ''
           include "input.kdl"
