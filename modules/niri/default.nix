@@ -25,6 +25,7 @@ in {
     };
 
     environment.systemPackages = with pkgs; [
+      elephant # for walker
       walker # app launcher
       waybar # status bar
       swaylock-effects # screen locker
