@@ -5,5 +5,7 @@
     fastfetch
     alejandra
     pavucontrol
+    zip
+    unzip
   ];
 }
