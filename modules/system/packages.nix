@@ -7,5 +7,6 @@
     pavucontrol
     zip
     unzip
+    neovim
   ];
 }
