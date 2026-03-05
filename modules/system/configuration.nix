@@ -3,7 +3,14 @@
   pkgs,
   inputs,
   ...
-}: {
+}: let
+  fix-hdmi-color = pkgs.writeShellScript "fix-hdmi-color" ''
+    devname="$(basename "$DEVPATH")"
+    card="''${devname%%-HDMI-A-*}"
+    conn_id="$(cat "/sys/class/drm/$devname/connector_id" 2>/dev/null)" || exit 0
+    exec ${pkgs.libdrm.bin}/bin/proptest -D "/dev/dri/$card" CONNECTOR "$conn_id" Colorspace 0
+  '';
+in {
   nix.settings.experimental-features = [
     "nix-command"
     "flakes"
@@ -32,6 +39,9 @@
   };
 
   services = {
+    udev.extraRules = ''
+      ACTION!="remove", SUBSYSTEM=="drm", KERNEL=="card*-HDMI-A-*", RUN+="${fix-hdmi-color}"
+    '';
     libinput = {
       enable = true;
       touchpad.middleEmulation = false;
