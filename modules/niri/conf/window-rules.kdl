@@ -2,4 +2,6 @@
 window-rule {
   match app-id=r#"firefox$"# title="^Picture-in-Picture$"
   open-floating true
+  geometry-corner-radius 12
+  clip-to-geometry true
 }
