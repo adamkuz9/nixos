@@ -25,6 +25,21 @@ in {
         autosuggestion.enable = true;
         syntaxHighlighting.enable = true;
 
+        initExtraFirst = ''
+          if [[ -r "''${XDG_CACHE_HOME:-$HOME/.cache}/p10k-instant-prompt-''${(%):-%n}.zsh" ]]; then
+            source "''${XDG_CACHE_HOME:-$HOME/.cache}/p10k-instant-prompt-''${(%):-%n}.zsh"
+          fi
+        '';
+
+        # completionInit = ''
+        #   autoload -Uz compinit
+        #   if [[ -n ~/.zcompdump(#qN.mh+24) ]]; then
+        #     compinit
+        #   else
+        #     compinit -C
+        #   fi
+        # '';
+
         initExtra = "[[ ! -f ~/.p10k.zsh ]] || source ~/.p10k.zsh";
 
         plugins = [
