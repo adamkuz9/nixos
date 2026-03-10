@@ -68,6 +68,7 @@ in {
         "niri/window-rules.kdl".text = builtins.readFile ./conf/window-rules.kdl;
         "niri/binds.kdl".text = builtins.readFile ./conf/binds.kdl;
         "niri/outputs.kdl".text = builtins.readFile ./conf/outputs.kdl;
+        "mako/config".text = builtins.readFile ./conf/mako/config;
       };
     };
   };
