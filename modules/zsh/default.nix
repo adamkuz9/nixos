@@ -31,15 +31,6 @@ in {
           fi
         '';
 
-        # completionInit = ''
-        #   autoload -Uz compinit
-        #   if [[ -n ~/.zcompdump(#qN.mh+24) ]]; then
-        #     compinit
-        #   else
-        #     compinit -C
-        #   fi
-        # '';
-
         initExtra = "[[ ! -f ~/.p10k.zsh ]] || source ~/.p10k.zsh";
 
         plugins = [
