@@ -4,6 +4,6 @@ window-rule {
   open-floating true
 }
 window-rule {
-  geometry-corner-radius 12
+  geometry-corner-radius 8
   clip-to-geometry true
 }
