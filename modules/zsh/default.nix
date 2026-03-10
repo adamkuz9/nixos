@@ -17,11 +17,15 @@ in {
     users.users.adam.shell = pkgs.zsh;
 
     home-manager.users.adam = {
+      home.file.".p10k.zsh".source = ./p10k.zsh;
+
       programs.zsh = {
         enable = true;
         enableCompletion = true;
         autosuggestion.enable = true;
         syntaxHighlighting.enable = true;
+
+        initExtra = "[[ ! -f ~/.p10k.zsh ]] || source ~/.p10k.zsh";
 
         plugins = [
           {
