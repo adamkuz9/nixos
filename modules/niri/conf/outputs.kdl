@@ -16,7 +16,7 @@ output "DP-1" {
     transform "normal"
     position x=1920 y=0
     layout {
-        center-focused-column "always"
+        // center-focused-column "always"
         always-center-single-column
         preset-column-widths {
             proportion 0.24
