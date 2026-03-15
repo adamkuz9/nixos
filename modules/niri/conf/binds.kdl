@@ -42,6 +42,7 @@ binds {
     Mod+Shift+Left       { set-column-width "-10%"; }
     Mod+Shift+Right      { set-column-width "+10%"; }
     Mod+R                { switch-preset-column-width; }
+    Mod+C                { center-column; }
     Mod+Shift+Up         { set-window-height "-10%"; }
     Mod+Shift+Down       { set-window-height "+10%"; }
     Mod+BracketLeft      { consume-or-expel-window-left; }
