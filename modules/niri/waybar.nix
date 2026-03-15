@@ -96,7 +96,7 @@ in {
             tooltip-format-ethernet = "󰈀  {ifname}\nIP: {ipaddr}\n up: {bandwidthUpBits} down: {bandwidthDownBits}";
             tooltip-format-disconnected = "Disconnected";
             max-length = 50;
-            on-click = "alacritty -e nmtui connect";
+            on-click = "kitty sh -c 'nmtui connect'";
           };
 
           cpu = {

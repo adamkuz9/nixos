@@ -1,6 +1,6 @@
 binds {
     // Applications
-    Mod+Return      { spawn-sh "alacritty"; }
+    Mod+Return      { spawn-sh "kitty"; }
     Mod+D           { spawn-sh "walker --nohints"; }
     Mod+B           { spawn-sh "firefox"; }
     Mod+E           { spawn-sh "nautilus"; }
@@ -8,7 +8,7 @@ binds {
     // Mod+C           { spawn-sh "cliphist list | fuzzel --dmenu --config $NIRICONF/fuzzel/clipboard.ini | cliphist decode | wl-copy"; }
     // Mod+P           { spawn-sh "$NIRICONF/scripts/change-power-profile.sh"; }
     // Mod+W           { spawn-sh "$NIRICONF/scripts/toggle-waybar.sh"; }
-    // Mod+Ctrl+W      { spawn-sh "alacritty --title 'Wallpaper Selector' --config-file $NIRICONF/alacritty/float.toml -e $NIRICONF/scripts/change-wallpaper.sh"; }
+    // Mod+Ctrl+W      { spawn-sh "kitty --title 'Wallpaper Selector' sh -c '$NIRICONF/scripts/change-wallpaper.sh'"; }
     // Mod+Backspace   { spawn-sh "$NIRICONF/scripts/wlogout.sh"; }
 
     // Backlight and Audio

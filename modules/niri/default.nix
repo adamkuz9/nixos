@@ -8,7 +8,7 @@ with lib; let
   cfg = config.modules.niri;
 in {
   imports = [
-    ./alacritty.nix
+    ./kitty.nix
     ./waybar.nix
   ];
 
@@ -20,7 +20,7 @@ in {
     programs.niri.enable = true;
 
     modules = {
-      alacritty.enable = true;
+      kitty.enable = true;
       waybar.enable = true;
     };
 
