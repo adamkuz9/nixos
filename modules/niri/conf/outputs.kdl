@@ -15,5 +15,4 @@ output "DP-1" {
     scale 1
     transform "normal"
     position x=1920 y=0
-    variable-refresh-rate
 }
