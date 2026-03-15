@@ -66,7 +66,7 @@ in {
             format-bluetooth = "{icon} {volume}%";
             tooltip-format = "{desc} - {volume} %";
             format-muted = "󰝟 ";
-            on-click = "pwvucontrol";
+            on-click = "pavucontrol --tab=2 || pavucontrol";
             format-icons = {
               headphone = "󰋋 ";
               default = ["󰕿 " "󰖀 "];
