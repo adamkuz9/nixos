@@ -21,10 +21,10 @@ output "DP-1" {
         preset-column-widths {
             proportion 0.24
             proportion 0.33
-            proportion 0.58
+            proportion 0.50
             proportion 0.66
             proportion 1.0
         }
-        default-column-width { proportion 0.58; }
+        default-column-width { proportion 0.66; }
     }
 }
