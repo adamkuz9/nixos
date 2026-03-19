@@ -23,6 +23,7 @@
       python.enable = true;
       zsh.enable = true;
       zoxide.enable = true;
+      mullvad.enable = true;
     };
   };
 }
