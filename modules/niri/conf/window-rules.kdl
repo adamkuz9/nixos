@@ -10,6 +10,11 @@ window-rule {
 }
 
 window-rule {
+  match app-id=r#"^mullvad-vpn$"#
+  open-floating true
+}
+
+window-rule {
   geometry-corner-radius 8
   clip-to-geometry true
 }

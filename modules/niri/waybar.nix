@@ -32,6 +32,7 @@ in {
             "clock"
           ];
           modules-right = [
+            "custom/mullvad"
             "backlight"
             "pulseaudio"
             "battery"
@@ -118,6 +119,12 @@ in {
               balanced = "󰾅";
               power-saver = "󰾆";
             };
+          };
+
+          "custom/mullvad" = {
+            format = "󰒃";
+            tooltip = "Mullvad VPN";
+            on-click = "mullvad-vpn";
           };
 
           clock = {
