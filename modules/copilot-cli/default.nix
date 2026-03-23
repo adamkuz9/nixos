@@ -13,7 +13,7 @@ in {
 
   config = mkIf (copilot.enable) {
     environment.systemPackages = with pkgs; [
-        copilot-cli
+        github-copilot-cli
     ];
   };
 }
