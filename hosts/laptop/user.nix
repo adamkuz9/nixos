@@ -24,7 +24,7 @@
       zsh.enable = true;
       zoxide.enable = true;
       mullvad.enable = true;
-      copilot.enable = true
+      copilot.enable = true;
     };
   };
 }
