@@ -13,9 +13,9 @@ in {
 
   config = mkIf (dotnet.enable) {
     environment.systemPackages = with pkgs; [
-        dotnet-sdk
-        dotnet-runtime
-        dotnet-aspnetcore
+        dotnet-sdk_9
+        dotnet-runtime_9
+        dotnet-aspnetcore_9
     ];
   };
 }

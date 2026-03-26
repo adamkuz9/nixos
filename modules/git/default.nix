@@ -74,6 +74,8 @@ in {
           };
           interactive.diffFilter = "diff-so-fancy --patch";
           interactive.singleKey = true;
+          credential."https://github.com".helper = "!/run/current-system/sw/bin/gh auth git-credential";
+          credential."https://gist.github.com".helper = "!/run/current-system/sw/bin/gh auth git-credential";
         };
       };
     };

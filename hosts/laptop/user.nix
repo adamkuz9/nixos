@@ -25,6 +25,7 @@
       zoxide.enable = true;
       mullvad.enable = true;
       copilot.enable = true;
+      dotnet.enable = true;
     };
   };
 }

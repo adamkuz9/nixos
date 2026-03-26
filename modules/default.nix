@@ -14,6 +14,7 @@
     ./zoxide
     ./mullvad
     ./copilot-cli
+    ./dotnet
   ];
   # imports = builtins.map (name: ./${name}) (builtins.attrNames (builtins.filter (name: type: type == "directory") (builtins.readDir ./)));
 }
