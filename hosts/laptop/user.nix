@@ -26,6 +26,7 @@
       mullvad.enable = true;
       copilot.enable = true;
       dotnet.enable = true;
+      stremio.enable = true;
     };
   };
 }
