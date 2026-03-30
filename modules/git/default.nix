@@ -27,7 +27,6 @@ in {
           push.default = "current";
           push.followTags = true;
           pull.default = "current";
-          pull.rebase = true;
           rebase.autoStash = true;
           rebase.missingCommitsCheck = "warn";
           log.abrrevCommit = true;
