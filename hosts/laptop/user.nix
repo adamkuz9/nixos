@@ -20,6 +20,8 @@
       niri.enable = true;
       gcc.enable = true;
       cloudflared.enable = true;
+      tailscale.enable = true;
+      rustdesk.enable = true;
       python.enable = true;
       zsh.enable = true;
       zoxide.enable = true;

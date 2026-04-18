@@ -10,6 +10,8 @@
     ./gcc
     ./python
     ./cloudflared
+    ./tailscale
+    ./rustdesk
     ./zsh
     ./zoxide
     ./mullvad

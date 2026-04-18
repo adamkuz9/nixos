@@ -66,6 +66,7 @@ tooltip label {
 
 #custom-media,
 #custom-updates,
+#custom-tailscale,
 #custom-mullvad,
 #backlight,
 #pulseaudio,
@@ -103,4 +104,12 @@ tooltip label {
 
 #custom-media {
   color: #8968cd;
+}
+
+#custom-tailscale.connected {
+  color: #7bc95b;
+}
+
+#custom-tailscale.disconnected {
+  color: rgba(255, 255, 255, 0.45);
 }

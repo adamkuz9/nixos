@@ -6,6 +6,13 @@
 }:
 with lib; let
   cfg = config.modules.waybar;
+  tailscaleStatusScript = pkgs.writeShellScript "waybar-tailscale-status" ''
+    if ${pkgs.tailscale}/bin/tailscale status --json 2>/dev/null | ${pkgs.gnugrep}/bin/grep -q '"BackendState":[[:space:]]*"Running"'; then
+      printf '%s\n' '{"text":"󰖂","class":"connected","tooltip":"Tailscale connected"}'
+    else
+      printf '%s\n' '{"text":"󰖂","class":"disconnected","tooltip":"Tailscale disconnected"}'
+    fi
+  '';
 in {
   options = {
     modules.waybar.enable = mkEnableOption "waybar";
@@ -32,6 +39,7 @@ in {
             "clock"
           ];
           modules-right = [
+            "custom/tailscale"
             "custom/mullvad"
             "backlight"
             "pulseaudio"
@@ -125,6 +133,13 @@ in {
             format = "󰒃";
             tooltip = "Mullvad VPN";
             on-click = "mullvad-vpn";
+          };
+
+          "custom/tailscale" = {
+            exec = tailscaleStatusScript;
+            format = "{}";
+            return-type = "json";
+            interval = 10;
           };
 
           clock = {
