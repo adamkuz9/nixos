@@ -19,6 +19,7 @@
       discord.enable = true;
       niri.enable = true;
       gcc.enable = true;
+      nodejs.enable = true;
       cloudflared.enable = true;
       tailscale.enable = true;
       rustdesk.enable = true;

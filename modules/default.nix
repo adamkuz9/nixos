@@ -8,6 +8,7 @@
     ./git
     ./vscode
     ./gcc
+    ./nodejs
     ./python
     ./cloudflared
     ./tailscale
