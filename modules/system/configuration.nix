@@ -73,6 +73,8 @@
   programs.mepo.locationBackends.geoclue = false;
   programs.nix-ld.enable = true;
 
+  environment.localBinInPath = true;
+
   programs.nix-ld.libraries = with pkgs; [
     stdenv.cc.cc
     zlib
