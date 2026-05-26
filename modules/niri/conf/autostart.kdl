@@ -1,5 +1,6 @@
 spawn-at-startup "waybar"
 spawn-at-startup "mako"
+spawn-sh-at-startup "swaybg --image $HOME/bakgronds/bakgrond.png -m fill"
 spawn-at-startup "walker" "--gapplication-service"
 spawn-at-startup "elephant"
 spawn-at-startup "xwayland-satellite"
