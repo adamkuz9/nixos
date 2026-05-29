@@ -12,18 +12,33 @@ in {
   };
 
   config = mkIf (gcc.enable) {
-    environment.systemPackages = with pkgs; [
-      gcc15
-      cmake
-      ninja
-      gdb
-      pkg-config
-      qt6.qtbase
-      qt6.qtdeclarative
-      qt6.qtgraphs
-      qt6.qttools
-      qt6.qtwayland
-      pkgs.jetbrains.clion
-    ];
+    environment = {
+      pathsToLink = [
+        "/include"
+        "/libexec"
+        "/metatypes"
+        "/mkspecs"
+      ];
+
+      systemPackages = with pkgs; [
+        gcc15
+        cmake
+        ninja
+        gdb
+        pkg-config
+        libglvnd
+        libglvnd.dev
+        vulkan-headers
+        vulkan-loader
+        qt6.qtbase
+        qt6.qtdeclarative
+        qt6.qtgraphs
+        qt6.qtquick3d
+        qt6.qtshadertools
+        qt6.qttools
+        qt6.qtwayland
+        pkgs.jetbrains.clion
+      ];
+    };
   };
 }
