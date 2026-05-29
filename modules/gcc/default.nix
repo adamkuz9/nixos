@@ -20,6 +20,10 @@ in {
         "/mkspecs"
       ];
 
+      sessionVariables = {
+        CMAKE_PREFIX_PATH = ["/run/current-system/sw"];
+      };
+
       systemPackages = with pkgs; [
         gcc15
         cmake
