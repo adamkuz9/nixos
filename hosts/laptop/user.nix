@@ -31,6 +31,7 @@
       dotnet.enable = true;
       stremio.enable = true;
       obsidian.enable = true;
+      typst.enable = true;
     };
   };
 }
