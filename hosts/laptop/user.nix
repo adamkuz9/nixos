@@ -30,6 +30,7 @@
       copilot.enable = true;
       dotnet.enable = true;
       stremio.enable = true;
+      obsidian.enable = true;
     };
   };
 }
