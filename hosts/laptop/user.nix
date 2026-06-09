@@ -32,6 +32,7 @@
       stremio.enable = true;
       obsidian.enable = true;
       typst.enable = true;
+      power.enable = true;
     };
   };
 }
