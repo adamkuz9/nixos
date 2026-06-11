@@ -49,6 +49,7 @@ binds {
     Mod+BracketRight     { consume-or-expel-window-right; }
     Mod+Comma            { consume-window-into-column; }
     Mod+Period           { expel-window-from-column; }
+    Mod+Shift+W { spawn "pkill" "-USR1" "waybar"; }
 
     // Workspaces
     Mod+Page_Down      { focus-workspace-down; }
