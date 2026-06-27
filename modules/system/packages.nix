@@ -8,5 +8,6 @@
     zip
     unzip
     neovim
+    google-chrome
   ];
 }
