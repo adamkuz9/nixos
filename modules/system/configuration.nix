@@ -15,7 +15,7 @@
     ./packages.nix
   ];
 
-  time.timeZone = "Europe/Copenhagen";
+  time.timeZone = "Asia/Tokyo";
 
   i18n.defaultLocale = "en_GB.UTF-8";
 
